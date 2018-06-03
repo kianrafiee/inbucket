@@ -17,7 +17,7 @@ func SetupRoutes(r *mux.Router) {
 	r.Path("/status").Handler(
 		web.Handler(RootStatus)).Name("RootStatus").Methods("GET")
 	r.Path("/m/{name}/{id}").Handler(
-		web.Handler(MailboxShow)).Name("MailboxShow").Methods("GET")
+		web.Handler(MailboxMessage)).Name("MailboxMessage").Methods("GET")
 	r.Path("/m/{name}/{id}/html").Handler(
 		web.Handler(MailboxHTML)).Name("MailboxHtml").Methods("GET")
 	r.Path("/m/{name}/{id}/source").Handler(
