@@ -22,8 +22,6 @@ func SetupRoutes(r *mux.Router) {
 		web.Handler(MailboxHTML)).Name("MailboxHtml").Methods("GET")
 	r.Path("/m/{name}/{id}/source").Handler(
 		web.Handler(MailboxSource)).Name("MailboxSource").Methods("GET")
-	r.Path("/m/dattach/{name}/{id}/{num}/{file}").Handler(
-		web.Handler(MailboxDownloadAttach)).Name("MailboxDownloadAttach").Methods("GET")
-	r.Path("/m/vattach/{name}/{id}/{num}/{file}").Handler(
+	r.Path("/m/attach/{name}/{id}/{num}/{file}").Handler(
 		web.Handler(MailboxViewAttach)).Name("MailboxViewAttach").Methods("GET")
 }
