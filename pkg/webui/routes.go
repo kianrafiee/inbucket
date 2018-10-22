@@ -6,7 +6,7 @@ import (
 	"github.com/jhillyerd/inbucket/pkg/server/web"
 )
 
-// SetupRoutes populates routes for the webui into the provided Router
+// SetupRoutes populates routes for the webui into the provided Router.
 func SetupRoutes(r *mux.Router) {
 	r.Path("/").Handler(
 		web.Handler(RootIndex)).Name("RootIndex").Methods("GET")
