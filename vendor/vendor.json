@@ -1,6 +1,6 @@
 {
     "comment": "For other heroku options see: https://devcenter.heroku.com/articles/go-support",
-    "rootPath": "github.com/kianrafiee/inbucket",
+    "rootPath": "github.com/kianrafiee/go",
     "heroku": {
         "sync": false
     }
