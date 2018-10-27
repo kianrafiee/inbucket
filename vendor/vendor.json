@@ -3,6 +3,6 @@
     "rootPath": "github.com/kianrafiee/inbucket",
     "heroku": {
         "install" : [ "./..." ],
-        "sync": false
+        "sync": true
     }
 }
