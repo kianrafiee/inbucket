@@ -215,4 +215,10 @@
 			"revision": ""
 		}
 	],
+	
+	"rootPath": "github.com/jhillyerd/inbucket"
+	"heroku": {
+        "install" : [ "./..." ],
+         },
+    ...
 }
